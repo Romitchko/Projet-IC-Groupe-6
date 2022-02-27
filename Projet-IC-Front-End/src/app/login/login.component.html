@@ -1,0 +1,14 @@
+<div>
+    <h4>Connecter vous</h4>
+    <form (ngSubmit)="register()" [formGroup]="loginForm">
+        <div>
+            <input type="text" placeholder="Username" formControlName="u_username">
+        </div>
+        <div>
+            <input type="password" placeholder="Password" formControlName="u_password">
+        </div>
+        <div class="flex-x-center">
+            <button type="submit" [disabled]="loginForm.invalid">Log in</button>
+        </div>
+    </form>
+</div>
