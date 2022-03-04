@@ -8,13 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PieceDtacheComponent } from './piece-dtache/piece-dtache.component';
+import { PieceDetacheFormComponent } from './piece-detache-form/piece-detache-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     LoginComponent,
-    PieceDtacheComponent
+    PieceDtacheComponent,
+    PieceDetacheFormComponent
   ],
   imports: [
     BrowserModule,

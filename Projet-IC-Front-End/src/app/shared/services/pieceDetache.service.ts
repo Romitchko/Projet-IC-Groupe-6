@@ -13,4 +13,13 @@ export class PieceDetacheService {
   getPiecesDetache(): any {
     return this.http.get(environment.TPAPI + 'pieceDetache');
   }
+
+  newPieceDetache(pd_libelle, pd_prix): any {
+    return this.http.post(environment.TPAPI + 'pieceDetache', 
+      {
+        pd_libelle: pd_libelle,
+        pd_prix: pd_prix
+      }
+    );
+  }
 }
