@@ -1,4 +1,4 @@
-<div>Notre catalogue de pièces :</div>
+<div>Notre catalogue de pièces : <button routerLink="./add">Ajouter une pièce</button></div>
 <br>
 <div *ngFor="let piecesDetache of piecesDetaches">
     <div>{{piecesDetache.pd_libelle}}, {{piecesDetache.pd_prix}}€</div>

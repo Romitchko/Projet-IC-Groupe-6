@@ -1,1 +1,14 @@
-<p>piece-detache-form works!</p>
+<div>
+    <h4>Ajouter une pièce détachée au catalogue</h4>
+    <form (ngSubmit)="register()" [formGroup]="pieceDetacheForm">
+        <div>
+            <input type="text" placeholder="Libellé de la pièce" formControlName="pd_libelle">
+        </div>
+        <div>
+            <input type="number" placeholder="Prix" formControlName="pd_prix">
+        </div>
+        <div class="flex-x-center">
+            <button type="submit" [disabled]="pieceDetacheForm.invalid">Ajouter</button>
+        </div>
+    </form>
+</div>

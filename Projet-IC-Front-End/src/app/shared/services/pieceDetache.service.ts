@@ -14,7 +14,7 @@ export class PieceDetacheService {
     return this.http.get(environment.TPAPI + 'pieceDetache');
   }
 
-  newPieceDetache(pd_libelle, pd_prix): any {
+  postPiecesDetache(pd_libelle, pd_prix): any {
     return this.http.post(environment.TPAPI + 'pieceDetache', 
       {
         pd_libelle: pd_libelle,
