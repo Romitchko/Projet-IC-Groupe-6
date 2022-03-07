@@ -35,7 +35,7 @@ export class PieceDetacheFormComponent implements OnInit {
   }
 
   register(): void {
-    this.pieceDetacheService.postPiecesDetache(
+    this.pieceDetacheService.createPiecesDetache(
       this.pdLibelleCtrl.value,
       this.pdPrixCtrl.value
     ).subscribe( _ => {

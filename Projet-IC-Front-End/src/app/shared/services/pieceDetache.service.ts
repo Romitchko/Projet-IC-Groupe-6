@@ -14,11 +14,11 @@ export class PieceDetacheService {
     return this.http.get(environment.TPAPI + 'pieceDetache');
   }
 
-  postPiecesDetache(pd_libelle, pd_prix): any {
+  createPiecesDetache(libelle, prix): any {
     return this.http.post(environment.TPAPI + 'pieceDetache', 
       {
-        pd_libelle: pd_libelle,
-        pd_prix: pd_prix
+        "pd_libelle": libelle,
+        "pd_prix": prix
       }
     );
   }
