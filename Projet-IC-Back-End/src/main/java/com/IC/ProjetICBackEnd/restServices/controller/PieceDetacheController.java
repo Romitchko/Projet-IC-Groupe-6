@@ -28,8 +28,8 @@ public class PieceDetacheController {
 	
 	@PostMapping(path= "/pieceDetache", consumes = "application/json", produces = "application/json")
 	@CrossOrigin(origins = "http://localhost:4200")
-	public int create(@RequestBody String pd_libelle, @RequestBody int pd_prix) {
+	public int create(@RequestBody PieceDetache pieceDEtache) {
 		String sql = "insert into piece_detache (pd_libelle, pd_prix) values (?, ?)";
-		return jdbcTemplate.update(sql, pd_libelle, pd_prix);
+		return jdbcTemplate.update(sql, pieceDEtache.getPd_libelle(), pieceDEtache.getPd_prix());
 	}
 }
